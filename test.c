@@ -93,15 +93,121 @@
 //		puts("b是a的约数");
 //	return 0;
 //}
+//#include <stdio.h>
+//int main()
+//{
+//	int a;
+//	printf("请输入一个整数：");
+//	scanf_s("%d", &a);
+//	if (a%10==5)
+//		puts("该整数个位数为5");
+//	else
+//		puts("该整数个位数不为5");
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int a, b;
+//	puts("请输入两个整数");
+//	printf("整数a：");
+//	scanf_s("%d", &a);
+//	printf("整数b：");
+//	scanf_s("%d", &b);
+//	if (a == b)
+//		printf("a与b相等\n");
+//	else
+//		printf("a不会大于和小于b\n");
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int a, b, c, max,MAX;
+//	puts("请输入三个整数：");
+//	printf("整数a：");
+//	scanf_s("%d", &a);
+//	printf("整数b：");
+//	scanf_s("%d", &b);
+//	printf("整数c：");
+//	scanf_s("%d", &c);
+//	/*max = a;*/
+//	/*if (b > max)
+//		max = b;
+//	if (c > max)
+//		max = c;*/
+//	max = (a > b) ? a : b;
+//	MAX = (max > c) ? max : c;
+//	printf("三个数中较大的数为：%d\n", MAX);
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int a, b;
+//	puts("请输入两个整数：");
+//	printf("整数a：");
+//	scanf_s("%d", &a);
+//	printf("整数b：");
+//	scanf_s("%d", &b);
+//	printf("它们的差是：%d\n", (a > b)?a - b:b - a);
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int a, b, c,d, max,MAX,MMAX;
+//	puts("请输入四个整数：");
+//	printf("整数a：");
+//	scanf_s("%d", &a);
+//	printf("整数b：");
+//	scanf_s("%d", &b);
+//	printf("整数c：");
+//	scanf_s("%d", &c);
+//	printf("整数c：");
+//	scanf_s("%d", &d);
+//	/*max = a;*/
+//	/*if (b > max)
+//		max = b;
+//	if (c > max)
+//		max = c;*/
+//	max = (a > b) ? a : b;
+//	MAX = (max > c) ? max : c;
+//	MMAX = (MAX > d) ? MAX : d;
+//	printf("四个数中较大的数为：%d\n", MMAX);
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int a, b,x;
+//	puts("请输入两个整数：");
+//	printf("整数a：");
+//	scanf_s("%d", &a);
+//	printf("整数b：");
+//	scanf_s("%d", &b);
+//	if (a > b)
+//		printf("他们的差为：%d\n", x=a - b);
+//	else
+//		printf("他们的差为：%d\n", x=b - a);
+//	return 0;
+//}
 #include <stdio.h>
 int main()
 {
-	int a;
-	printf("请输入一个整数：");
+	int a, b, c, min;
+	puts("请输入三个整数：");
+	printf("整数a：");
 	scanf_s("%d", &a);
-	if (a%10==5)
-		puts("该整数个位数为5");
-	else
-		puts("该整数个位数不为5");
+	printf("整数b：");
+	scanf_s("%d", &b);
+	printf("整数c：");
+	scanf_s("%d", &c);
+	min = a;
+	if (b < min)
+		min = b;
+	if (c < min)
+		min = c;
+	printf("三个数中较小的数为：%d\n", min);
 	return 0;
 }
